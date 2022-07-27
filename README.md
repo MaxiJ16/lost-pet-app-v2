@@ -1,3 +1,3 @@
 # lost-pet-app-v2
 
-lost-pet-app-2b162.web.app
+https://lost-pet-app-2b162.web.app/
