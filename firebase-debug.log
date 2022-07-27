@@ -59,3 +59,66 @@ You're about to initialize a Firebase project in this directory:
 [info] 
 [info] +  Success! Logged into GitHub as MaxiJ16 
 [info] 
+[debug] [2022-07-27T14:27:19.013Z] >>> [apiv2][query] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:27:19.352Z] <<< [apiv2][status] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key 401
+[debug] [2022-07-27T14:27:19.352Z] <<< [apiv2][body] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:27:27.599Z] >>> [apiv2][query] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:27:28.024Z] <<< [apiv2][status] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key 401
+[debug] [2022-07-27T14:27:28.024Z] <<< [apiv2][body] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:27:34.054Z] >>> [apiv2][query] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:27:34.443Z] <<< [apiv2][status] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key 401
+[debug] [2022-07-27T14:27:34.444Z] <<< [apiv2][body] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:27:35.094Z] >>> [apiv2][query] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:27:35.878Z] <<< [apiv2][status] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key 401
+[debug] [2022-07-27T14:27:35.879Z] <<< [apiv2][body] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:05.333Z] >>> [apiv2][query] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:05.708Z] <<< [apiv2][status] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:05.708Z] <<< [apiv2][body] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:10.374Z] >>> [apiv2][query] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:10.712Z] <<< [apiv2][status] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:10.712Z] <<< [apiv2][body] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:11.198Z] >>> [apiv2][query] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:11.519Z] <<< [apiv2][status] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:11.519Z] <<< [apiv2][body] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:12.109Z] >>> [apiv2][query] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:12.457Z] <<< [apiv2][status] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:12.457Z] <<< [apiv2][body] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:12.605Z] >>> [apiv2][query] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:12.639Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:12.661Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:12.695Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:12.729Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:12.764Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:12.798Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:12.837Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:12.859Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:12.894Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:12.990Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:12.990Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:12.993Z] <<< [apiv2][status] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:12.993Z] <<< [apiv2][body] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:12.996Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:12.996Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:13.003Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:13.004Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:13.059Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:13.059Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:13.070Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:13.070Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:13.114Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:13.114Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:13.195Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:13.195Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:13.199Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:13.199Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:13.207Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:13.207Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:21.651Z] >>> [apiv2][query] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key type=owner
+[debug] [2022-07-27T14:28:21.966Z] <<< [apiv2][status] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key 401
+[debug] [2022-07-27T14:28:21.966Z] <<< [apiv2][body] GET https://api.github.com/repos/MaxiJ16/lost-pet-app-v2/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-27T14:28:43.554Z] Error: kill ENOSYS
+    at process.kill (node:internal/process/per_thread:220:13)
+    at process.listener (C:\Users\maxij\AppData\Roaming\nvm\v16.16.0\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (node:events:527:28)
+[error] 
+[error] Error: An unexpected error has occurred.
