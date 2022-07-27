@@ -1,0 +1,15 @@
+.root-search-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.img {
+  background-image: url("https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.9/mercadolibre/logo__small@2x.png");
+  background-color: transparent;
+  background-size: 44px 31px;
+  width: 44px;
+  height: 31px;
+}

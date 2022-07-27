@@ -1,0 +1,10 @@
+.reportForm {
+  height: auto;
+  display: grid;
+  gap: 15px;
+}
+
+.cancel {
+  text-decoration: none;
+  color: var(--color-black);
+}

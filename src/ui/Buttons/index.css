@@ -1,0 +1,26 @@
+.main, .green, .red, .grey {
+  text-align: center;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 37px;
+}
+
+.main {
+  background-color: var(--color-buttonMain);
+}
+
+.green {
+  background-color:  var(--color-button2);
+  height: auto;
+  display: grid;
+  gap: 10px;
+}
+
+.red {
+  background-color: var(--color-header);
+}
+
+.grey {
+  background-color: var(--color-button3);
+}

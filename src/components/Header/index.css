@@ -1,0 +1,14 @@
+.header {
+  padding: 13px 20px;
+  background-color: var(--color-header);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .header {
+    height: auto;
+  }
+}
