@@ -1,0 +1,29 @@
+.loader {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border: 5px solid var(--color-header);
+  border-color: var(--color-header) transparent;
+  border-radius: 50%;
+  animation: girar 1.2s linear infinite;
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.suspense {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

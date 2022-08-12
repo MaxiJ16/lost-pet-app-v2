@@ -1,0 +1,55 @@
+/* CONTAINER */
+
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 335px;
+  height: 300px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  display:flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.container:hover {
+  box-shadow: 0 8px 16px 0 grey;
+}
+
+/* CONTAINER IMG - IMG */
+
+.container-img, .img, .container-content {
+  width: 100%;
+}
+
+.container-img {
+  height: 200px;
+}
+
+.img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTAINER CONTENT */
+
+.container-content {
+  height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px 11px;
+}
+
+.pencil {
+  width: 24px;
+  height: 24px;
+}
+
+.lost {
+  color: var(--color-error);
+}
+
+.found {
+  color: var(--color-success);
+}

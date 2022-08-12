@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 200px;
+  max-height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.img {
+  width: 100%;
+  min-height: 250px;
+  max-height: 300px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+

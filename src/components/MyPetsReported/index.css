@@ -1,0 +1,53 @@
+.myPet {
+  padding: 44px 20px;
+  display: grid;
+  gap: 40px;
+}
+
+@media (min-width: 769px){
+  .myPet {
+    height: auto;
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+
+.cardsContainer {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 769px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.noReports {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btnReport {
+  background-color: var(--color-button2);
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+@media(min-width: 769px){
+  .noReports {
+    font-size: 20px;
+  }
+
+  .btnReport {
+    padding: 20px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,13 @@
+.message-error, .message-success {
+  text-align: center;
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.message-error {
+  background-color: var(--color-error);
+}
+
+.message-success {
+  background-color: var(--color-success);
+}
