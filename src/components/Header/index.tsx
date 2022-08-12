@@ -1,7 +1,8 @@
-import { BurguerMenu, NavbarMenuXl } from "components/BurguerMenu";
-import { Paw } from "ui/Paw";
 import css from "./index.css";
 import { useState } from "react";
+import { BurguerMenu } from "components/BurguerMenu";
+import { NavbarMenuXl } from "components/Navbar";
+import { Paw } from "ui/Paw";
 
 export function Header() {
   const [open, setOpen] = useState(false);

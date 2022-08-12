@@ -1,23 +1,10 @@
-import { MainButton } from "ui/Buttons";
-import { MainTextField } from "ui/TextField";
-import css from "./index.css"
+// HOOKS
+import { useUserToken} from "hooks";
 
-export function MyDataForm(){
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const name = e.target.name.value
-    const password = e.target.password.value
-    const repeatPassword = e.target.repeatPassword.value
-    
-    console.log(name,password,repeatPassword  );
-  }
+import { SignupUser } from "./SignUpUser";
+import { ModifyUser } from "./modifyUser";
 
-  return(
-    <form onSubmit={handleSubmit} className={css.myData}>
-      <MainTextField type="text" name="name">Nombre</MainTextField>
-      <MainTextField type="text" name="password">Contraseña</MainTextField>
-      <MainTextField type="text" name="repeatPassword">Repetir Contraseña</MainTextField>
-      <MainButton>Guardar</MainButton>
-    </form>
-  )
+export function MyDataForm() {
+  const [userToken, setUserToken] = useUserToken();
+  return userToken ? <ModifyUser /> : <SignupUser />;
 }

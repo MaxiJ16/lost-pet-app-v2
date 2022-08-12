@@ -1,12 +1,5 @@
-import { MyDataForm } from "components/MyDataForm";
-import { Title } from "ui/Texts";
-import css from "./index.css"
+import { MyPetsReported } from "components/MyPetsReported";
 
-export function MyPets(){
-  return (
-    <section className={css.myPet}>
-      <Title>Mis Mascotas Reportadas</Title>
-      <MyDataForm/>
-    </section>
-  )
+export function MyPets() {
+  return <MyPetsReported />;
 }

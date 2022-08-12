@@ -4,3 +4,4 @@
 // para eso escribimos declare module entre comillas *(cualquier archivo).css
 declare module "*.css";
 declare module '*.png';
+

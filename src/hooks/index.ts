@@ -1,55 +1,90 @@
-import { useState, useEffect } from "react";
+export const API_BASE_URL = "https://mod7-lost-pet-app.herokuapp.com";
 
-// Importo el selector (nuevo átomo)
-import { queryState, resultsState, itemState, resultsItemState } from "../atoms/atoms";
+import { getMe } from "lib/get-me";
 
 // importo useRecoilValue
-import { useRecoilState, useRecoilValue } from "recoil";
+import { useRecoilState, useRecoilValue, atom, selector } from "recoil";
 
-import { useParams } from "react-router-dom";
+// USAMOS LA LIBRERIA RECOIL PERSIST PARA QUE LOS DATOS SE MANTENGAN EN EL LOCALSTORAGE
+import { recoilPersist } from "recoil-persist";
 
-//Este hook usa el hook useParams() de react-router para enterarse de cambios en la URL
-export function useSearchResults() {
-  // le pide los parámetros al router, y el router le avisa cada vez que cambia
-  // 1 - Escucha la URL (params)
-  const params = useParams();
-  // A su vez le informa a Recoil que este valor cambió y guarda el valor de el param query en un átomo (state) de recoil
-  // 3 - Esto hace que cambie el átomo de queryState y que se dispare el selector resultsState
-  const [query, setQuery] = useRecoilState(queryState);
-  console.log("el valor de query en recoil", query);
+export const { persistAtom } = recoilPersist({
+  key: "data",
+  storage: localStorage,
+});
 
-  // 
-  // 2 - Escucho cambios en los params con useEffect, y le avisamos a recoil (useEffect)
-  useEffect(() => {
-    // guardar el valor de la query en el átomo: queryState
-    setQuery(params.query);
-  }, [params.query]);
+//// LOGIN ////
 
-  // finalmente me engancho a los cambios de resultState
-  // 4 - Recibe los resultados del selector resultsState
-  const results = useRecoilValue(resultsState);
+// ÁTOMO Y HOOK EMAIL
+export const userEmail = atom({
+  key: "userEmail",
+  default: "",
+  effects_UNSTABLE: [persistAtom],
+});
 
-  return {
-    results,
-    query
-  };
-}
+export const useUserEmail = () => useRecoilState(userEmail);
 
-// CUSTOM-HOOK ITEMS
+// ÁTOMO Y HOOK TOKEN
+export const userToken = atom({
+  key: "userToken",
+  default: "",
+  effects_UNSTABLE: [persistAtom],
+});
 
-export const useItemResults = () => {
-  // Escuchamos el params de la URL
-  const params = useParams();
-  const itemParams = params.id;
+export const useUserToken = () => useRecoilState(userToken);
 
-  // Obtenemos el state del item de recoil
-  const [item, setItem] = useRecoilState(itemState);
-
-  useEffect(() => {
-    // seteamos el nuevo parámetro en el state de recoil
-    setItem(itemParams);
-  }, [itemParams]);
-
-  const resultsItem = useRecoilValue(resultsItemState)
-  return resultsItem;
+//// CREATE USER ////
+type dataUser = {
+  fullname: string;
+  email: string;
+  passwordId: string;
 };
+
+// ÁTOMO Y HOOK CREATE USER
+export const userCreateState = atom({
+  key: "userCreate",
+  default: {} as dataUser,
+});
+
+export const useUserCreate = () => useRecoilState(userCreateState);
+
+// ÁTOMO Y HOOK PASSWORD ID
+export const passId = atom({
+  key: "passId",
+  default: "",
+  effects_UNSTABLE: [persistAtom],
+});
+
+export const usePassId = () => useRecoilState(passId);
+
+// ÁTOMO Y HOOK DE IMAGEDATAURL PARA DROPZONE
+export const imageDataURL = atom({
+  key: "ImageDataURL",
+  default: null,
+});
+
+export const useImageDataURL = () => useRecoilState(imageDataURL);
+
+//// USERDATA ////
+
+// SELECTOR Y HOOK USERDATA
+export const userData = selector({
+  key: "userData",
+  get: async ({ get }) => {
+    const [userToken, setUserToken] = useUserToken();
+    const myUserData = await getMe(userToken);
+    return myUserData;
+  },
+});
+
+export const useUserData = () => useRecoilValue(userData);
+
+
+// DATOS DE 1 MASCOTA PARA PODER EDITAR
+export const petData = atom({
+  key: "petData",
+  default: "",
+  effects_UNSTABLE: [persistAtom],
+});
+
+export const usePetData = () => useRecoilState(petData);

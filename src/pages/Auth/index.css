@@ -1,9 +1,7 @@
 .auth {
   padding: 44px 20px;
   width: 100vw;
-  height: 50vh;
   max-width: 600px;
   margin: 0 auto;
-  display: grid;
-  gap: 30px;
+  height: 80vh;
 }

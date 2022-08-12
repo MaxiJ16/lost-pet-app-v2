@@ -1,23 +1,33 @@
-import { useNavigate, Link } from "react-router-dom";
-
+import css from "./index.css";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { MainButton } from "ui/Buttons";
 import { MainTextField } from "ui/TextField";
-import { LinkText } from "ui/Texts";
-
-import css from "./index.css";
+import { Loader } from "ui/Loader";
+import { checkEmail } from "lib/login";
+import { useUserEmail } from "hooks";
 
 export function AuthForm() {
-  // navigate es un hook de react-router-dom, y me lleva a otra ruta sin problemas
   const navigate = useNavigate();
+  const [userEmail, setUserEmail] = useUserEmail();
+  const [loader, setLoader] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const email = e.target.email.value;
 
-    // le decimos que queremos ir a /search/elproductoquebuscamos
-    // navigate(`/search/${query}`, { replace: true });
-    navigate(`/auth/password`, { replace: true });
-    console.log(email);
+    setLoader(true);
+    const email = e.target.email.value;
+    // seteamos al átomo de email
+    setUserEmail(email);
+    // Chequeamos que el email exista con la api
+    const res = await checkEmail(email);
+    // Si el email existe, pasa a password. Si no existe a Mis Datos, para registrarse
+    if (res) {
+      setLoader(false);
+      navigate(`/auth/password`);
+    } else {
+      navigate(`/my-data`);
+    }
   };
   return (
     <form onSubmit={handleSubmit} className={css["login-form"]}>
@@ -25,29 +35,7 @@ export function AuthForm() {
         Email
       </MainTextField>
       <MainButton>Siguiente</MainButton>
-    </form>
-  );
-}
-
-export function PasswordForm() {
-  // navigate es un hook de react-router-dom, y me lleva a otra ruta sin problemas
-  const navigate = useNavigate();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const password = e.target.password.value;
-
-    // le decimos que queremos ir a /search/elproductoquebuscamos
-    // navigate(`/search/${query}`, { replace: true });
-    console.log(password);
-  };
-  return (
-    <form onSubmit={handleSubmit} className={css["login-form"]}>
-      <MainTextField type="text" name="password">
-        Contraseña
-      </MainTextField>
-      <LinkText>Olvidé mi contraseña</LinkText>
-      <MainButton>Ingresar</MainButton>
+      {loader && <Loader />}
     </form>
   );
 }

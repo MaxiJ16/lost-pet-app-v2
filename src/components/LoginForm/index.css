@@ -1,8 +1,12 @@
-.login-form {
-  display: flex;
-  flex-direction: column;
+.login-form, .login-form-pass {
+  display: grid;
+  gap: 20px;
 }
 
-.login-form :nth-child(2n) {
-  text-align: center;
+.login-form, .login-form-pass {
+  margin-top: 40px;
+}
+
+.userEmail {
+  color: grey;
 }

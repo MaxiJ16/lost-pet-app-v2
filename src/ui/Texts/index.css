@@ -1,6 +1,15 @@
-.title, .subtitle, .subtitleBold, .body, .bodyBold, .caption, .link{
+.title, .subtitle, .subtitleBold, .body, .bodyBold, .caption, .link, .link-home, .link-login{
   margin: 0;
 }
+
+.subtitleBold, .bodyBold, .title {
+  font-weight: 700;
+}
+
+.subtitle, .body {
+  font-weight: 400;
+}
+  /* TITULO */
 
 .title {
   font-size: 40px;
@@ -9,26 +18,34 @@
 
 @media(min-width:769px){
   .title {
-    font-size: 70px;
+    font-size: 50px;
   }
 }
 
-.subtitle, .body {
-  font-weight: 400;
+/* SUBITULO */
+
+.subtitle, .subtitleBold {
+  font-size: 24px;
 }
+
 
 .caption, .link {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: bold;
 }
 
-.subtitleBold, .bodyBold, .title {
-  font-weight: 700;
-}
-
-.link {
+.link-home, .link-login {
+  text-transform: uppercase;
   color: var(--color-link);
   text-decoration: underline;
-  margin-top: 6px;
+}
+
+.link-login {
+  text-align: center;
+}
+
+.link-home {
+  width: 122px;
+  text-align: right;
 }
 

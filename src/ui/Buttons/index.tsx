@@ -1,11 +1,15 @@
 import { BodyBold } from "ui/Texts";
-
 import css from "./index.css";
 
-export function MainButton({ children }) {
+export function MainButton(props: { children; Click? }) {
+  const handleClick = () => {
+    if (props.Click) {
+      props.Click();
+    }
+  };
   return (
-    <button className={css.main}>
-      <BodyBold>{children}</BodyBold>
+    <button className={css.main} onClick={handleClick}>
+      <BodyBold>{props.children}</BodyBold>
     </button>
   );
 }

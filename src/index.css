@@ -13,8 +13,8 @@
   --color-link-hover: #C6558B;
   --color-white: #fdf5e6;
   --color-black: #000000;
-  --color-error: #1f1c1c;
-  ;
+  --color-success: #198754;
+  --color-error:#dc3545;
 }
 
 * {
