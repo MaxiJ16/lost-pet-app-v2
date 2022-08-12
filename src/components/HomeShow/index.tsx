@@ -5,6 +5,7 @@ import { PetCard } from "components/PetCard";
 import { MainButton } from "ui/Buttons";
 import { Caption, Title } from "ui/Texts";
 import { Loader } from "ui/Loader";
+import petImgLocation from "assets/ubicacion.png";
 
 export function HomeShow() {
   const [res, setRes] = useState(null);
@@ -52,6 +53,7 @@ export function HomeShow() {
     <section className={css.home}>
       <Title>Mascotas perdidas cerca tuyo</Title>
       <div className={css["container-form"]}>
+        <img src={petImgLocation} alt="location" className={css.locationImg}/>
         <Caption>
           Para ver las mascotas reportadas cerca tuyo necesitamos permiso para
           conocer tu ubicación.
