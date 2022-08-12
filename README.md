@@ -10,5 +10,6 @@ https://documenter.getpostman.com/view/15124189/UyrHfZ3r
 
 <h2 align="left"> Tecnologías Utilizadas </h2>
 Front: React, Recoil, React-dropzone, Mapbox
+
 Back: Node, Express, Postgresql, Algolia
 Deploy: Firebase Hosting
