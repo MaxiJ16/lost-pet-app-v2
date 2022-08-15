@@ -57,15 +57,20 @@ export function SignupUser() {
       // SI SE CREA CON ÉXITO
       if (res.message) {
         setLoader(false);
-        setSuccess(res.message);
-        // LO AUTENTICA PARA QUE INICIE SESIÓN
-        const resLogin = await loginToApi(userEmail, password);
+        setSuccess(`${res.message}, Iniciando sesión...`);
 
-        // SI SE AUTENTICÓ CON ÉXITO SETEA EL TOKEN Y REDIRIGE A LA PÁGINA PRINCIPAL
-        if (resLogin.token) {
-          await setUserToken(res.token);
+        // LO AUTENTICA PARA QUE INICIE SESIÓN
+        setTimeout(async () => {
+          const resLogin = await loginToApi(userEmail, password);
+          if (resLogin.token) {
+            // SI SE AUTENTICÓ CON ÉXITO SETEA EL TOKEN Y REDIRIGE A LA PÁGINA PRINCIPAL
+            setUserToken(resLogin.token);
+          }
+        }, 2500);
+
+        setTimeout(() => {
           navigate("/");
-        }
+        }, 4000);
       }
 
       // SI EL USUARIO NO SE CREA CON ÉXITO MUESTRA EL ERROR
@@ -75,6 +80,7 @@ export function SignupUser() {
       }
       // SI CONTRASEÑA Y REPETIR CONTRASEÑA "NO" COINCIDEN MUESTRA UN MENSAJE DE ERROR
     } else {
+      setLoader(false);
       setError("Las contraseñas no coinciden");
     }
   };

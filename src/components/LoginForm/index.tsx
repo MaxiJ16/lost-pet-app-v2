@@ -31,7 +31,7 @@ export function AuthForm() {
   };
   return (
     <form onSubmit={handleSubmit} className={css["login-form"]}>
-      <MainTextField type="text" name="email">
+      <MainTextField type="email" name="email">
         Email
       </MainTextField>
       <MainButton>Siguiente</MainButton>
