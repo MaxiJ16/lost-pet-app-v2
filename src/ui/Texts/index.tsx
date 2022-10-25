@@ -17,11 +17,11 @@ export function BodyText(props: {children: string}) {
 }
 
 export function BodyBold(props: {children}) {
-  return <h4 className={css.bodyBold}>{props.children}</h4>;
+  return <p className={css.bodyBold}>{props.children}</p>;
 }
 
 export function Caption(props: {children: string}) {
-  return <h4 className={css.caption}>{props.children}</h4>;
+  return <p className={css.caption}>{props.children}</p>;
 }
 
 export function LinkText(props: {children: string, page?}) {

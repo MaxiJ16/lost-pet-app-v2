@@ -54,13 +54,13 @@ export function NavbarMenu(props: { open?; handleClick? }) {
             {userEmail && userToken !== "" ? userEmail : "Invitado/a"}
           </h2>
 
-          <a onClick={SessionClick}>
+          <span onClick={SessionClick}>
             <h2 className={css.linkSession}>
               {userEmail && userToken !== ""
                 ? "Cerrar Sesión"
                 : "Iniciar Sesión"}
             </h2>
-          </a>
+          </span>
         </div>
       </div>
     </div>
@@ -94,17 +94,17 @@ export function NavbarMenuXl() {
         <SubtitleBold>Reportar mascota</SubtitleBold>
       </Link>
 
-      <a className={css.navbarLink}>
+      <span className={css.navbarLink}>
         <h2 className={css.email}>
           {userEmail && userToken !== "" ? userEmail : "Invitado/a"}
         </h2>
-      </a>
+      </span>
 
-      <a className={css.navbarLink} onClick={SessionClick}>
+      <span className={css.navbarLink} onClick={SessionClick}>
         <h2 className={css.linkSession}>
           {userEmail && userToken !== "" ? "Cerrar Sesión" : "Iniciar Sesión"}
         </h2>
-      </a>
+      </span>
     </div>
   );
 }

@@ -10,5 +10,5 @@ export function Paw() {
     navigate(`/`, { replace: true });
   }
 
-  return <img src={patita} onClick ={handleClick}></img>;
+  return <img src={patita} onClick ={handleClick} alt="patita" width="auto" height="auto" srcSet={patita}></img>;
 }
