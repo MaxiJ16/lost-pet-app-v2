@@ -1,4 +1,4 @@
-export const API_BASE_URL = "https://mod7-lost-pet-app.herokuapp.com";
+export const API_BASE_URL = process.env.API_BASE_URL;
 
 import { getMe } from "lib/get-me";
 
