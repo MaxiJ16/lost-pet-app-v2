@@ -13,7 +13,8 @@ import mapboxgl from "mapbox-gl";
 const container = document.getElementById("app");
 const root = createRoot(container);
 
-mapboxgl.accessToken = process.env.MAPBOX_TOKEN;
+mapboxgl.accessToken =
+  "pk.eyJ1IjoibWF4aWoxNiIsImEiOiJja3o4ZGM4czIxajNnMnZwMXVnOW9rNDNzIn0.ABGwGPaAvtM2_g4yHzWb-w";
 
 // App es el componente que vamos a imprimir
 root.render(

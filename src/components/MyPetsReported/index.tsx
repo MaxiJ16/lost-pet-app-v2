@@ -7,13 +7,14 @@ import { userPets } from "lib/user-pets";
 import { useNavigate } from "react-router-dom";
 
 export function MyPetsReported() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [res, setRes] = useState({} as any);
   const [token, setToken] = useUserToken();
 
   const myPetsReports = async () => {
     const myPetsCallApi = await userPets(token);
     await setRes(myPetsCallApi);
+    return myPetsCallApi;
   };
 
   useEffect(() => {
@@ -42,7 +43,12 @@ export function MyPetsReported() {
       ) : (
         <div className={css.noReports}>
           <span>Aún no tienes mascotas reportadas</span>
-          <button className={css.btnReport} onClick={() => navigate("/report-pet")}>Reportar Mascota</button>
+          <button
+            className={css.btnReport}
+            onClick={() => navigate("/report-pet")}
+          >
+            Reportar Mascota
+          </button>
         </div>
       )}
     </section>

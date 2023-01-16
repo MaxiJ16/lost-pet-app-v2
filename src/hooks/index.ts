@@ -1,4 +1,4 @@
-export const API_BASE_URL = process.env.API_BASE_URL;
+export const API_BASE_URL = "https://lost-pet-app-production.up.railway.app/";
 
 import { getMe } from "lib/get-me";
 
@@ -78,7 +78,6 @@ export const userData = selector({
 });
 
 export const useUserData = () => useRecoilValue(userData);
-
 
 // DATOS DE 1 MASCOTA PARA PODER EDITAR
 export const petData = atom({
