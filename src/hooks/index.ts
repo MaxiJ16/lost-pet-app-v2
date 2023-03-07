@@ -1,4 +1,4 @@
-export const API_BASE_URL = "https://lost-pet-app-production.up.railway.app";
+export const API_BASE_URL = "https://react-lost-pet-app.onrender.com";
 
 import { getMe } from "lib/get-me";
 
